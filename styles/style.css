@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: BigNoodleTitling;
+    /* Имя шрифта */
+    src: url("../fonts/big_noodle_titling.ttf");
+    /* Путь к файлу со шрифтом */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*    border: 1px solid black;*/
+    outline: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    border: 0;
+    outline: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+/* MAIN */
+
+body {
+    background-color: #f8f6f6;
+}
+
+.backColor {
+    background-color: #f8f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+.pageHeader {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden-menu {
+    display: none;
+    text-align: right;
+}
+
+.hidden-menu ul {
+    list-style-type: none;
+}
+
+.hidden-menu a {
+    font-family: Roboto, sans-serif;
+    color: #707070;
+    font-size: 17.7px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+/*
+.btnMenu:hover+.hidden-menu {
+    display: block;
+    position: relative;
+    background-color: #f8f6f6;
+    list-style-type: none;
+    top: 3em;
+
+}
+*/
+
+/*
+
+.imgBurgerMenu:target~.hidden-menu{
+    display: block;
+}
+*/
+
+.backColorAlfa171f23 {
+    background-color: rgba(23, 31, 35, 0.5);
+
+}
+
+.backColor171f23 {
+    background-color: rgb(23, 31, 35);
+
+}
+
+.videoSlogan {
+    position: absolute;
+    z-index: -10;
+}
+
+video {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+    position: relative;
+
+}
+
+secVideo {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contSlogan {}
+
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.aboutUs {
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+*/
+    height: 70vh;
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+.portfolio {
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+*/
+    /*    height: 100vh;*/
+}
+
+.clients {
+    height: 20vh;
+    background-color: #171f23;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin:auto;
+    /*    padding: 0 15vw 0 15vw;*/
+}
+
+.clients img {
+    text-align: center;
+}
+
+.fish {
+    position: relative;
+    top: 8px;
+}
+
+.team {
+    height: 100vh;
+}
+
+.features {
+    /*    height: 30vh;*/
+    background-color: #171f23;
+}
+
+.blogs {
+    height: 100vh;
+}
+
+.pricing {
+    /*    height: 100vh;*/
+    background-color: #171f23;
+}
+
+.contacts {
+    height: 100vh;
+}
+
+/* pageHeader */
+
+.divLogo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    display: inline-block;
+    font-family: BigNoodleTitling, sans-serif;
+    color: #696969;
+    font-size: 40px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    margin-left: 1vw;
+    letter-spacing: 1vw;
+}
+
+.imgLogo {
+    display: inline-block;
+}
+
+.imgBurgerMenu {
+    height: 21px;
+}
+
+/* slogan */
+
+.divSlogan {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.textSlogan {
+    font-family: BigNoodleTitling, sans-serif;
+    color: #d6d5d5;
+    font-size: 72px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.subTextSlogan {
+    font-family: BigNoodleTitling, sans-serif;
+    color: #d6d5d5;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5vw;
+}
+
+.divScroll {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scroll {
+    font-family: Roboto, sans-serif;
+    color: #d6d5d5;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    /*    margin-bottom: 5vh;*/
+}
+
+.mouse {
+    /*    margin-bottom: 2vh;*/
+}
+
+/*about*/
+
+.divAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    font-family: BigNoodleTitling, sans-serif;
+    color: #3d3d3d;
+    font-size: 47.97px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    transform: scaleY(1.0007);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    letter-spacing: 0.5vw;
+    margin-bottom: 0;
+}
+
+hr {
+    border: none;
+    /* Убираем границу */
+    background-color: red;
+    /* Цвет линии */
+    color: red;
+    /* Цвет линии для IE6-7 */
+    height: 2px;
+    /* Толщина линии */
+    width: 9em;
+    margin-top: 0;
+    /*    margin-bottom: 3vh;*/
+}
+
+.textAbout {
+    font-family: Roboto, sans-serif;
+    color: #696969;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: center;
+    transform: scaleY(1.0007);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    margin-bottom: 5vh;
+}
+
+.secAbout {
+/*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+*/
+    /*    margin: 0 10vw 0 10vw;*/
+}
+
+.artAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: #ebebeb;
+    margin: 2vh 0;
+}
+
+.subAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.artAbout h3 {
+    font-family: Roboto, sans-serif;
+    color: #707070;
+    font-size: 17.7px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    transform: scaleX(1.0171);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    /*    margin-bottom: 1vh;*/
+}
+
+.artAbout p {
+    font-family: Roboto, sans-serif;
+    color: #707070;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: center;
+    /*    margin-bottom: 1vh;*/
+    /*    padding: 0 1vw 2vh 1vw;*/
+}
+
+.imgAbout {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Video */
+
+.textVideo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5% 0;
+    background-color: #171f23;
+
+}
+
+.textVideo h3 {
+    font-family: Roboto, sans-serif;
+    ;
+    color: #e7e7e7;
+    font-size: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+
+.textVideo p {
+    font-family: Roboto, sans-serif;
+    color: #696969;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: center;
+    /*    padding: 5% 10% 5% 10%;*/
+}
+
+.textVideoButton {
+    color: white;
+    border-style: none;
+    background-color: #e84c3d;
+    width: 127px;
+    height: 35px;
+    font: bold 14px Roboto, sans-serif;
+    text-shadow: none;
+    /*    margin-top: 2vh;*/
+}
+
+.textVideoButton:target {
+    color: red;
+}
+
+.divVideo:hover {
+    background: none;
+}
+
+.divVideo {
+    width: 50%;
+    height: 100%;
+    background: url("../images/VideoSection.png") no-repeat center/cover rgb(23, 31, 35);
+
+    /*
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+*/
+}
+
+/* projects */
+
+.works {
+    /*    height: 40vh;*/
+}
+
+.projects {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /*    padding: 0 10% 0 10%;*/
+    /*    margin-bottom: -8vh;*/
+}
+
+.projects p {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 13.68px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    transform: scaleX(1.0242);
+    width: 12vw;
+}
+
+.projects p:first-child {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 13.68px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleX(1.0242);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    border-bottom: 1px red solid;
+}
+
+.gridPortfolio {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+/*    grid-template-columns: repeat(5, 1fr);*/
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+
+    /*    height: 60vh;*/
+}
+
+.gridPortfolio a {
+    border: none;
+    /* Убираем рамку */
+    /*    height: 60vh;*/
+}
+
+.gridPortfolio img {
+
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    /* Убираем рамку */
+}
+
+.prof {
+    /*
+    display: flex;
+    justify-content: space-between;
+*/
+    /*    margin: 0 15vw 0 15vw;*/
+}
+
+.fio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    padding: 6vh 0;
+    background-color: #ebebeb;
+}
+
+.fioFoto {
+    background-color: #e84c3d;
+    border-radius: 50%;
+    width: 134px;
+    height: 134px;
+}
+
+.fioName {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+
+.fioJob {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+
+i {
+    color: #3d3d3d;
+}
+
+.circleFa i {
+    color: white;
+}
+
+.circleFa i:first-child {
+    color: #3d3d3d;
+}
+
+.skills {
+
+    height: 60vh;
+    background-color: #ebebeb;
+    padding: 10vh 5vw 10vh 5vw;
+}
+
+.skills h3 {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.skills p {
+    font-family: Roboto, sans-serif;
+    color: #858383;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: left;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.progressSkill {
+    width: 100%;
+    margin-right: 1em;
+}
+
+.progressBg {
+    background-color: white;
+    width: 100%;
+}
+
+.progressBar {
+    height: 2px;
+    background-color: #e84c3d;
+}
+
+.skillName {
+    width: 12em;
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.skillPercent {
+    font-family: Roboto, sans-serif;
+    color: #3d3d3d;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+}
+
+/* BLOGS */
+
+.artBlogs {
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+*/
+    margin: 2vh 0;
+    height: 60vh;
+    background-color: #ebebeb;
+}
+
+.imgBlogs {
+    height: 30vh;
+    width: 100%;
+    background-color: #505050;
+}
+
+.subBlogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    padding: 0 2vw 0 2vw;
+}
+
+.blogsFa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
+    color: #8a8989;
+    font-size: 10px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.subBlogs h3 {
+    font-family: Roboto, sans-serif;
+    color: #505050;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+}
+
+.subBlogs p {
+    font-family: Roboto, sans-serif;
+    color: #797979;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: left;
+}
+
+/*features*/
+
+.divFeatures h2 {
+    font-family: Roboto, sans-serif;
+    color: #f6f6f6;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.divFeatures hr {
+    background-color: #404040;
+}
+
+.itemFeatures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemPricing:hover {
+    border: 1px solid #e84c3d;
+}
+
+.itemPricing {
+    background-color: #1f282c;
+    margin-bottom: 5vh;
+}
+
+.itemFeaturesName {
+    font-family: Roboto, sans-serif;
+    color: #f6f6f6;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+
+.itemFeaturesScore {
+    font-family: Roboto, sans-serif;
+    color: #f6f6f6;
+    font-size: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+
+.plan {
+    background-color: #0e1316;
+    width: 100%;
+}
+
+.type {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleX(1.0062);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    margin-bottom: 0;
+    margin-top: 3vh;
+}
+
+.price {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    transform: scaleX(1.0062);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.aboutPlan {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 14.13px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: center;
+    margin: 3vh 0;
+}
+
+.planButton {
+    margin: 3vh 0;
+}
+
+/*Contact*/
+
+.contactName {
+    font-family: Roboto, sans-serif;
+    color: #696969;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    margin: 3vh 0;
+    width: 100%;
+}
+
+.contactName em {
+    font-family: Roboto, sans-serif;
+    color: #f6744b;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.textContactName {
+    background-color: #f8f6f6;
+    border: none;
+    border-bottom: 1px solid #696969;
+    color: #696969;
+    width: 100%;
+    outline: none;
+    margin: 2vh 0;
+}
+
+.contactButton {
+    width: 203px;
+    height: 51px;
+}
+
+.map {
+    background-color: #0c1215;
+    height: 84px;
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+
+.map i {
+    color: #f6744b;
+}
+
+.map h3 {
+    width: 10em;
+    display: inline-block;
+}
+
+.pageFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh 0;
+    background-color: #171f23;
+}
+
+.pageFooter h2 {
+    font-family: BigNoodleTitling, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.pageFooter p {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.pageFooter i {
+    color: #e2e1e1;
+    font-size: 13.98px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: center;
+    transform: scaleY(1.0016);
+}
